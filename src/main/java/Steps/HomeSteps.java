@@ -1,17 +1,18 @@
 package Steps;
 
+import Data.Variables;
 import Pages.HomePage;
 import com.codeborne.selenide.Selenide;
 
-public class HomeSteps {
-    HomePage homePage = new HomePage();
+public class HomeSteps extends HomePage {
 
     public HomeSteps openHomePage(){
-        Selenide.open("https://demoqa.com/");
+        Selenide.open(new Variables().URL);
         return this;
     }
 
-    public void clickForms(){
-        homePage.formsItem.scrollTo().click();
+    public HomeSteps clickAddRemoveElements(){
+        addRemoveElements.click();
+        return this;
     }
 }

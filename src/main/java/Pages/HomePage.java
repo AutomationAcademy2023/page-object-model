@@ -2,10 +2,9 @@ package Pages;
 
 import com.codeborne.selenide.SelenideElement;
 
-import static com.codeborne.selenide.Selectors.*;
-import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.*;
 
 public class HomePage {
-    public SelenideElement
-            formsItem = $(byText("Forms"));
+    public final SelenideElement
+           addRemoveElements = $("a[href='/add_remove_elements/']");
 }

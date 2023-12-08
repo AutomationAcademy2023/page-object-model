@@ -1,4 +1,4 @@
-package DataPatternTests;
+package Setup;
 
 import static com.codeborne.selenide.Configuration.*;
 
